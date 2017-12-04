@@ -1,6 +1,9 @@
 /* eslint-env node */
 'use strict';
 
-module.exports = {
-  name: 'blog-engine'
-};
+const EngineAddon = require('ember-engines/lib/engine-addon');
+
+module.exports = EngineAddon.extend({
+  name: 'blog-engine',
+  lazyLoading: true
+});
