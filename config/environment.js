@@ -4,6 +4,6 @@
 module.exports = function(environment) {
   return {
     modulePrefix: 'blog-engine',
-    environment: environment
+    environment: environment,
   }
 };

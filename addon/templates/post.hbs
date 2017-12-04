@@ -1,0 +1,19 @@
+<div class="layout-row flex">
+  <div class="flex post-image">
+      <img src={{model.image}} alt="">
+  </div>
+  <div class="flex">
+    <h1>Title</h1>
+    <h3>{{model.title}}</h3>
+
+    <h1>Description</h1>
+    <h3>{{model.description}}</h3>
+    
+    {{#paper-button raised=true}}
+        {{#link-to 'index' tagName="div"}}Back to Posts{{/link-to}}
+    {{/paper-button}}
+  </div>
+</div>
+
+
+{{outlet}}
