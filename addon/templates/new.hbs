@@ -20,9 +20,11 @@
   value=model.description
   onChange=(action (mut model.description))}}
 
-{{#paper-button raised=true}}
-  {{#link-to 'index' tagName="div"}}Cancel{{/link-to}}
-{{/paper-button}}
+{{#link-to 'index' tagName="div"}}
+  {{#paper-button raised=true}}
+    Cancel
+  {{/paper-button}}
+{{/link-to}}
 
 {{#paper-button raised=true primary=true onClick=(route-action "createPost" model)}}
   Create Post

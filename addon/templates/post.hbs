@@ -9,9 +9,11 @@
     <h1>Description</h1>
     <h3>{{model.description}}</h3>
     
-    {{#paper-button raised=true}}
-        {{#link-to 'index' tagName="div"}}Back to Posts{{/link-to}}
-    {{/paper-button}}
+    {{#link-to 'index' tagName="div"}}
+        {{#paper-button raised=true}}
+            Back to Posts
+        {{/paper-button}}
+    {{/link-to}}
   </div>
 </div>
 
