@@ -5,5 +5,7 @@ const EngineAddon = require('ember-engines/lib/engine-addon');
 
 module.exports = EngineAddon.extend({
   name: 'blog-engine',
-  lazyLoading: true
+  lazyLoading: {
+    enabled: true
+  }
 });
